@@ -1,0 +1,17 @@
+<form>
+    <div class="mb-3">
+        <label for="DateFrom" class="form-label">Date From</label>
+        <input type="date" class="form-control" name="DateFrom" placeholder="yyyy-MM-dd" [(ngModel)]="DateFrom">
+    </div>
+    <div class="mb-3">
+        <label for="DateTo" class="form-label">Date To</label>
+        <input type="date" class="form-control" name="DateTo" placeholder="yyyy-MM-dd" [(ngModel)]="DateTo">
+    </div>
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" class="form-control" [value]="resource.quantity" min="1" max="999" [(ngModel)]="BookedQuantity" />
+    </div>
+    <button (click)="bookResource()" class="btn btn-primary">
+        Book
+    </button>
+</form>

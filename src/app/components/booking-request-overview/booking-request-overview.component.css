@@ -1,0 +1,47 @@
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+#add-success-alert,
+#add-warning-alert  {
+  display: none;
+}
+
+#add-success-alert,
+#add-warning-alert
+ {
+  animation-name: fadeInAndOut;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fadeInAndOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
